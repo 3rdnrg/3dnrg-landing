@@ -412,53 +412,45 @@ export default function Example() {
                         </div>
                     </div>
                 </div>
-                <section className="bg-white py-24 sm:py-32">
+                <section className="bg-white py-24 sm:py-32 overflow-x-auto">
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                            <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-                                <img className="h-12 self-start"
-                                     src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt=""/>
-                                <figure className="mt-10 flex flex-auto flex-col justify-between">
-                                    <blockquote className="text-lg leading-8 text-gray-900">
-                                        <p>
-                                            “Alle Prozesse im PV-Bereich sind Dank der raschen
-                                            und präzisen Planungsmöglichkeiten die uns
-                                            3DNRGY bietet, schlanker und schneller. Die
-                                            Entwicklung des Geschäftsbereiches hat durch die
-                                            3D Modellierung alle Erwartungen übertroffen.
-                                            ”
-                                        </p>
-                                    </blockquote>
-                                    <figcaption className="mt-10 flex items-center gap-x-6">
-                                        <img
-                                            className="h-14 w-14 rounded-full bg-gray-50"
-                                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                    </figcaption>
-                                </figure>
+                        <div className="flex space-x-8">
+                            <div className="flex-shrink-0 flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
+                                <img className="h-12 self-start mb-10"
+                                     src="/object1.png" alt=""/>
+                                <blockquote className="text-lg leading-8 text-gray-900">
+                                    <p>
+                                        “Alle Prozesse im PV-Bereich sind Dank der raschen
+                                        und präzisen Planungsmöglichkeiten die uns
+                                        3DNRGY bietet, schlanker und schneller. Die
+                                        Entwicklung des Geschäftsbereiches hat durch die
+                                        3D Modellierung alle Erwartungen übertroffen.”
+                                    </p>
+                                </blockquote>
                             </div>
-                            <div
-                                className="flex flex-col border-t border-gray-900/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
-                                <img className="h-12 self-start"
-                                     src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt=""/>
-                                <figure className="mt-10 flex flex-auto flex-col justify-between">
-                                    <blockquote className="text-lg leading-8 text-gray-900">
-                                        <p>
-                                            “Dank der 3-D Modelle von 3DNRG sind unsere
-                                            Planungskosten gesunken und die Genauigkeit
-                                            gestiegen. Unsere Kunden sind von der
-                                            Visualisierung Ihrer PV-Anlage begeistert.”
-                                        </p>
-                                    </blockquote>
-                                    <figcaption className="mt-10 flex items-center gap-x-6">
-                                        <img
-                                            className="h-14 w-14 rounded-full bg-gray-50"
-                                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                    </figcaption>
-                                </figure>
+                            <div className="flex-shrink-0 flex flex-col lg:pl-8 xl:pl-20">
+                                <img className="h-12 self-start mb-10"
+                                     src="/solvis.png" alt=""/>
+                                <blockquote className="text-lg leading-8 text-gray-900">
+                                    <p>
+                                        “Dank der 3-D Modelle von 3DNRG sind unsere
+                                        Planungskosten gesunken und die Genauigkeit
+                                        gestiegen. Unsere Kunden sind von der
+                                        Visualisierung Ihrer PV-Anlage begeistert.”
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <div className="flex-shrink-0 flex flex-col lg:pl-8 xl:pl-20">
+                                <img className="h-12 self-start mb-10"
+                                     src="/glc.png" alt=""/>
+                                <blockquote className="text-lg leading-8 text-gray-900">
+                                    <p>
+                                        “Mit unserem zuverlässigen Partner 3DNRGY, setzen
+                                        wir alle Projekte lange vor der Deadline um. Dank
+                                        der Modellierung sind Fehlmengen ausgeschlossen,
+                                        kein Vergleich zur 2D Planung”
+                                    </p>
+                                </blockquote>
                             </div>
                         </div>
                     </div>
