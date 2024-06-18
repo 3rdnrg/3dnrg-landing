@@ -412,16 +412,16 @@ export default function Example() {
                         </div>
                     </div>
                 </div>
-                <section className="bg-white py-24 sm:py-32 overflow-x-auto">
-                    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <HorizontalDivider/>
+                <section className="bg-white py-24 sm:py-32">
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-x-auto">
                         <div className="flex space-x-8">
                             <div className="flex-shrink-0 flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-                                <img className="h-12 self-start mb-10"
-                                     src="/object1.png" alt=""/>
-                                <blockquote className="text-lg leading-8 text-gray-900">
+                                <img className="h-12 self-start mb-10" src="/object1.png" alt="Object 1"/>
+                                <blockquote className="text-lg text-gray-900 leading-relaxed">
                                     <p>
-                                        “Alle Prozesse im PV-Bereich sind Dank der raschen
-                                        und präzisen Planungsmöglichkeiten die uns
+                                        “Alle Prozesse im PV-Bereich sind dank der raschen
+                                        und präzisen Planungsmöglichkeiten, die uns
                                         3DNRGY bietet, schlanker und schneller. Die
                                         Entwicklung des Geschäftsbereiches hat durch die
                                         3D Modellierung alle Erwartungen übertroffen.”
@@ -429,9 +429,8 @@ export default function Example() {
                                 </blockquote>
                             </div>
                             <div className="flex-shrink-0 flex flex-col lg:pl-8 xl:pl-20">
-                                <img className="h-12 self-start mb-10"
-                                     src="/solvis.png" alt=""/>
-                                <blockquote className="text-lg leading-8 text-gray-900">
+                                <img className="h-12 self-start mb-10" src="/solvis.png" alt="Solvis"/>
+                                <blockquote className="text-lg text-gray-900 leading-relaxed">
                                     <p>
                                         “Dank der 3-D Modelle von 3DNRG sind unsere
                                         Planungskosten gesunken und die Genauigkeit
@@ -441,14 +440,13 @@ export default function Example() {
                                 </blockquote>
                             </div>
                             <div className="flex-shrink-0 flex flex-col lg:pl-8 xl:pl-20">
-                                <img className="h-12 self-start mb-10"
-                                     src="/glc.png" alt=""/>
-                                <blockquote className="text-lg leading-8 text-gray-900">
+                                <img className="h-12 self-start mb-10" src="/glc.png" alt="GLC"/>
+                                <blockquote className="text-lg text-gray-900 leading-relaxed">
                                     <p>
                                         “Mit unserem zuverlässigen Partner 3DNRGY, setzen
                                         wir alle Projekte lange vor der Deadline um. Dank
                                         der Modellierung sind Fehlmengen ausgeschlossen,
-                                        kein Vergleich zur 2D Planung”
+                                        kein Vergleich zur 2d Planung.”
                                     </p>
                                 </blockquote>
                             </div>
@@ -456,9 +454,9 @@ export default function Example() {
                     </div>
                 </section>
                 <HorizontalDivider/>
-                <div className="bg-white py-24 sm:py-32">
+                <div className="bg-white py-24 sm:py-32 flex items-center justify-center">
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto max-w-2xl lg:max-w-none">
+                        <div className="mx-auto max-w-2xl lg:max-w-none flex flex-col items-center">
                             <div className="text-center">
                                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                                     Trusted by creators worldwide
@@ -467,7 +465,7 @@ export default function Example() {
                                     Lorem ipsum dolor sit amet consect adipisicing possimus.
                                 </p>
                             </div>
-                            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+                            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4 w-full">
                                 {stats.map((stat) => (
                                     <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
                                         <dt className="text-sm font-semibold leading-6 text-gray-600">{stat.name}</dt>
@@ -494,7 +492,7 @@ export default function Example() {
                         />
                     </div>
                     <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                        <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
                         <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                             Flexible Preisgestaltung für Ihre Bedürfnisse
 
