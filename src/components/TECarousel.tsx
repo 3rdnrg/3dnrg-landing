@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const TECarousel = ({ children, interval = 3000 }) => {
+const TECarousel = ({ children, interval = 4000 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
