@@ -356,7 +356,7 @@ export default function Example() {
                         </div>
                         <div className="flex justify-center lg:w-1/3">
                             <video controls className="w-full rounded-lg">
-                                <source src="" type="video/mp4"/>
+                                <source src="/solvis.mov" type="video/mp4"/>
                                 Your browser does not support the video tag.
                             </video>
                         </div>
