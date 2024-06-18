@@ -101,7 +101,7 @@ export default function Example() {
                             <a href="#" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
                                 <img
-                                    className="h-8 w-auto"
+                                    className=""
                                     src="/logo.JPG"
                                     alt=""
                                 />
@@ -730,10 +730,10 @@ export default function Example() {
                             <div className="sm:flex sm:items-center sm:justify-between">
                                 <a href="https://flowbite.com/"
                                    className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                                    <img src="https://flowbite.com/docs/images/logo.svg" className="h-8"
+                                    <img src="/logo.JPG" className="h-8"
                                          alt="Flowbite Logo"/>
                                     <span
-                                        className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                                        className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">3DNRG</span>
                                 </a>
                                 <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                                     <li>
