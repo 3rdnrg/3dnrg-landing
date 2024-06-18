@@ -365,7 +365,7 @@ export default function Example() {
 
                 <HorizontalDivider/>
                 <section className="bg-white py-1 sm:py-1 overflow-hidden">
-                    <div className="mx-auto max-w-2xl px-1 lg:px-1">
+                    <div className="mx-auto max-w-2xl px-1  lg:px-1">
                         <div className="flex flex-col lg:flex-col">
                             {/* Testimonial 1 */}
                             <div
