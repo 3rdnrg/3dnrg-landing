@@ -45,17 +45,12 @@ const PricingSection: React.FC<PricingSectionProps> = ({ tiers }) => {
                 wir bieten Ihnen maßgeschneiderte Preisoptionen,
                 die auf Ihre individuellen Anforderungen zugeschnitten sind.
             </p>
-            <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+            <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
                 {tiers.map((tier, tierIdx) => (
                     <div
                         key={tier.id}
                         className={classNames(
                             tier.featured ? 'relative bg-gray-900 shadow-2xl' : 'bg-white/60 sm:mx-8 lg:mx-0',
-                            tier.featured
-                                ? ''
-                                : tierIdx === 0
-                                    ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-bl-3xl lg:rounded-tr-none'
-                                    : 'sm:rounded-t-none lg:rounded-bl-none lg:rounded-tr-3xl',
                             'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10'
                         )}
                     >
@@ -69,17 +64,17 @@ const PricingSection: React.FC<PricingSectionProps> = ({ tiers }) => {
                             {tier.name}
                         </h3>
                         <p className="mt-4 flex items-baseline gap-x-2">
-              <span
-                  className={classNames(
-                      tier.featured ? 'text-white' : 'text-gray-900',
-                      'text-5xl font-bold tracking-tight'
-                  )}
-              >
-                {tier.priceMonthly}
-              </span>
+                            <span
+                                className={classNames(
+                                    tier.featured ? 'text-white' : 'text-gray-900',
+                                    'text-5xl font-bold tracking-tight'
+                                )}
+                            >
+                                {tier.priceMonthly}
+                            </span>
                             <span className={classNames(tier.featured ? 'text-gray-400' : 'text-gray-500', 'text-base')}>
-                /3D-Modell
-              </span>
+                                /3D-Modell
+                            </span>
                         </p>
                         <p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-6 text-base leading-7')}>
                             {tier.description}
