@@ -474,10 +474,7 @@ export default function Example() {
                 <PricingSection tiers={tiers} />
                 <ContactForm/>
                 <Footer />
-
-
                 <HorizontalDivider/>
-
             </main>
         </div>
     );

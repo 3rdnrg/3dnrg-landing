@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Impressum from './Impressum';
 
 const Footer = () => {
+    const [showImpressum, setShowImpressum] = useState(false);
+
     return (
         <Router>
-            <div className="flex flex-col min-h-screen">
-                <main className="flex-grow">
+            <div className="flex flex-col">
+                <main className="flex">
                     <Routes>
-
                         <Route path="/impressum" element={<Impressum />} />
 
                     </Routes>
@@ -22,13 +23,13 @@ const Footer = () => {
                             </Link>
                             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                                 <li>
-                                    <a href="/impressum" target="_blank" rel="noopener noreferrer" className="hover:underline me-4 md:me-6" aria-label="Impressum">Impressum</a>
+                                    <button className="hover:underline me-4 md:me-6" onClick={() => setShowImpressum(true)} aria-label="Impressum">Impressum</button>
                                 </li>
                                 <li>
-                                    <a href="/datenschutz" target="_blank" rel="noopener noreferrer" className="hover:underline me-4 md:me-6" aria-label="Datenschutzerklärung">Datenschutzerklärung</a>
+                                    <Link to="/datenschutz" className="hover:underline me-4 md:me-6" aria-label="Datenschutzerklärung">Datenschutzerklärung</Link>
                                 </li>
                                 <li>
-                                    <a href="/kontakt" target="_blank" rel="noopener noreferrer" className="hover:underline" aria-label="Kontakt">Kontakt</a>
+                                    <Link to="/kontakt" className="hover:underline" aria-label="Kontakt">Kontakt</Link>
                                 </li>
                             </ul>
                         </div>
@@ -37,6 +38,18 @@ const Footer = () => {
                     </div>
                 </footer>
             </div>
+            {showImpressum && (
+                <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75">
+                    <div className="max-w-screen-lg w-full p-8 bg-white rounded-lg shadow dark:bg-gray-900">
+                        <button className="absolute top-2 right-2 p-2 rounded-full bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-300 hover:bg-gray-400 dark:hover:bg-gray-600" onClick={() => setShowImpressum(false)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <Impressum />
+                    </div>
+                </div>
+            )}
         </Router>
     );
 }
